@@ -253,6 +253,8 @@ footer p {
 		display: block;
 		color: #eee;
 		padding: 5px;
+		margin-left: 50%;
+		margin-right: 0;
 		font-size: 1.5rem;
 		cursor: pointer;
 		opacity: 0.8;
@@ -302,11 +304,8 @@ footer p {
 		opacity: 1;
 	}
 	nav .nav-wrap .nav-menu {
-		display: flex;
-		justify-content: end;
-		margin: 0;
-		padding: 0;
-		background-color: brown;
+		justify-content: flex-end;
+		background-color: rgb(42, 165, 73);
 	}
 	.center-small {
 		width: 100%;
