@@ -249,7 +249,19 @@ footer p {
 		top: 70px;
 		opacity: 1;
 	}
-
+	.nav-wrap .nav-menu label {
+		display: block;
+		color: #eee;
+		padding: 5px;
+		font-size: 1.5rem;
+		cursor: pointer;
+		opacity: 0.8;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+	}
 	nav .nav-wrap .nav-menu ul {
 		display: flex;
 		opacity: 0;
@@ -286,24 +298,13 @@ footer p {
 		justify-content: start;
 		padding: 10px;
 	}
-	.nav-wrap .nav-menu label {
-		display: block;
-		color: #eee;
-		padding: 5px;
-		font-size: 1.5rem;
-		cursor: pointer;
-		opacity: 0.8;
-		transition: 0.5s;
-		-webkit-transition: 0.5s;
-		-moz-transition: 0.5s;
-		-ms-transition: 0.5s;
-		-o-transition: 0.5s;
-	}
 	.nav-wrap .nav-menu label:hover {
 		opacity: 1;
 	}
 	nav .nav-wrap .nav-menu {
 		justify-content: right;
+		align-items: flex-end;
+		background-color: brown;
 	}
 	.center-small {
 		width: 100%;
