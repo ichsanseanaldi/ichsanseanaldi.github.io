@@ -216,6 +216,7 @@ footer p {
 	background-position: center;
 	background-size: cover;
 	margin: 1rem auto 0;
+	box-shadow: 0 0 30px #121212;
 	filter: grayscale(50%);
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -233,9 +234,6 @@ footer p {
 		-moz-border-radius: 0;
 		-ms-border-radius: 0;
 		-o-border-radius: 0;
-	}
-	.content {
-		overflow-y: hidden;
 	}
 	.content-wrap p {
 		width: 100%;
@@ -256,7 +254,7 @@ footer p {
 	.nav-wrap .nav-menu label {
 		display: block;
 		color: #eee;
-		padding: 5px;
+		padding: 10px;
 		margin-left: 50%;
 		margin-right: 0;
 		font-size: 1.5rem;
@@ -278,7 +276,7 @@ footer p {
 		right: 0;
 		z-index: -1;
 		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
+		border-bottom-right-radius: 0;
 		height: 200px;
 		width: 20vw;
 		margin: 0 auto;
@@ -293,13 +291,13 @@ footer p {
 	}
 	nav .nav-wrap .nav-menu ul li {
 		text-align: center;
-		margin: 10px auto;
+		margin: 20px auto;
 		width: 100%;
 	}
 	nav .nav-wrap .nav-menu ul li a {
 		display: block;
 		text-align: center;
-		padding: 10px;
+		padding: 10px auto;
 	}
 	nav .nav-wrap .nav-brand {
 		justify-content: start;
@@ -312,8 +310,8 @@ footer p {
 		justify-content: flex-end;
 	}
 	.center-small {
+		padding-top: 50px;
 		width: 100%;
-		padding-top: 40px;
 	}
 	.center-small h1 {
 		width: 100%;
@@ -323,13 +321,17 @@ footer p {
 	}
 	.center-small h3 {
 		width: 100%;
-		font-size: 100%;
+		font-size: 20px;
+		padding: 20px;
+		color: #eee;
+		font-weight: 500;
+		text-align: center;
 		word-wrap: break-word;
 		word-break: break-all;
 	}
 	.center-small h4 {
 		width: 100%;
-		font-size: 100%;
+		font-size: 15px;
 		word-wrap: break-word;
 		word-break: break-all;
 	}
