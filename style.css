@@ -10,7 +10,7 @@ body {
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 nav {
 	width: 90%;
@@ -420,5 +420,14 @@ footer p {
 		-webkit-hyphens: auto;
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
+	}
+}
+@media screen and (max-height: 500px) {
+	.img-parallax-2 {
+		height: 500px;
+		position: relative;
+	}
+	.center-small {
+		height: 100%;
 	}
 }
