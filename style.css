@@ -248,7 +248,7 @@ footer p {
 	}
 
 	#toggle:checked ~ .nav-menu ul {
-		top: 70px;
+		top: 50px;
 		opacity: 1;
 	}
 	.nav-wrap .nav-menu label {
