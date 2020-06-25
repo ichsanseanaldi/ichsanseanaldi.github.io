@@ -289,9 +289,6 @@ footer p {
 	.nav-wrap .nav-menu label {
 		display: block;
 		color: #eee;
-		/* position: absolute;
-		top: 0;
-		right: 0; */
 		padding: 5px;
 		font-size: 1.5rem;
 		cursor: pointer;
@@ -305,8 +302,8 @@ footer p {
 	.nav-wrap .nav-menu label:hover {
 		opacity: 1;
 	}
-	.nav-wrap .nav-menu {
-		justify-content: end;
+	nav .nav-wrap .nav-menu {
+		justify-content: right;
 	}
 	.center-small {
 		width: 100%;
