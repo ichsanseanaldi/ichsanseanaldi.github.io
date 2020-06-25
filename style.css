@@ -92,7 +92,7 @@ nav ul li:hover {
 	background-color: rgb(199, 199, 199);
 }
 .content-wrap h1 {
-	padding-top:50px;
+	padding-top: 50px;
 	font-weight: 100;
 	letter-spacing: 1px;
 }
@@ -295,12 +295,11 @@ footer p {
 		text-align: center;
 		margin: 10px auto;
 		width: 100%;
-		border-bottom: 1px solid #eee;
 	}
 	nav .nav-wrap .nav-menu ul li a {
 		display: block;
 		text-align: center;
-		padding: 5px;
+		padding: 10px;
 	}
 	nav .nav-wrap .nav-brand {
 		justify-content: start;
@@ -314,7 +313,7 @@ footer p {
 	}
 	.center-small {
 		width: 100%;
-		padding-top: 50px;
+		padding-top: 40px;
 	}
 	.center-small h1 {
 		width: 100%;
@@ -366,6 +365,7 @@ footer p {
 	}
 	nav .nav-wrap .nav-menu ul {
 		width: 100px;
+		border-bottom-right-radius: 0;
 	}
 	.content {
 		overflow-y: auto;
@@ -377,6 +377,7 @@ footer p {
 		padding-top: 50px;
 	}
 	.center-small {
+		padding-top: 0;
 		width: 100%;
 		text-align: center;
 	}
