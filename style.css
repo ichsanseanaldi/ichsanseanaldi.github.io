@@ -376,8 +376,11 @@ footer p {
 	.content-wrap h1 {
 		padding-top: 50px;
 	}
+	.content-wrap p {
+		padding-bottom: 50px;
+	}
 	.center-small {
-		padding-top: 0;
+		padding-top: 50px;
 		width: 100%;
 		text-align: center;
 	}
