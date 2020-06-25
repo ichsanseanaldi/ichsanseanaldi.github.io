@@ -111,7 +111,7 @@ nav ul li:hover {
 .center-small h1 {
 	font-weight: 100;
 	padding: 1rem;
-	border: 1px solid #eee;
+	border: none;
 	letter-spacing: 1rem;
 	font-size: 3rem;
 	margin: 0 auto;
@@ -239,10 +239,14 @@ footer p {
 		word-wrap: break-word;
 		word-break: break-all;
 		font-size: 100%;
+		hyphens: auto;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
 	}
 
 	#toggle:checked ~ .nav-menu ul {
-		top: 50px;
+		top: 70px;
 		opacity: 1;
 	}
 
@@ -250,12 +254,14 @@ footer p {
 		display: flex;
 		opacity: 0;
 		flex-direction: column;
+		flex-wrap: wrap;
 		position: absolute;
 		top: -100px;
 		left: 0;
 		z-index: -1;
-		height: 100vh;
+		height: 200px;
 		width: 90vw;
+		margin: 0 auto;
 		background: rgba(0, 0, 0, 0.9);
 		justify-content: start;
 		padding: 0;
@@ -267,14 +273,14 @@ footer p {
 	}
 	nav .nav-wrap .nav-menu ul li {
 		text-align: center;
-		width: 50%;
-		margin: 3rem auto;
+		margin: 10px auto;
+		width: 100%;
 		border-bottom: 1px solid #eee;
 	}
 	nav .nav-wrap .nav-menu ul li a {
 		display: block;
 		text-align: center;
-		padding: 20px;
+		padding: 5px;
 	}
 	nav .nav-wrap .nav-brand {
 		justify-content: start;
@@ -283,8 +289,10 @@ footer p {
 	.nav-wrap .nav-menu label {
 		display: block;
 		color: #eee;
-		position: absolute;
-		padding: 1rem;
+		/* position: absolute;
+		top: 0;
+		right: 0; */
+		padding: 5px;
 		font-size: 1.5rem;
 		cursor: pointer;
 		opacity: 0.8;
@@ -330,12 +338,32 @@ footer p {
 	}
 }
 @media screen and (max-width: 400px) {
+	#toggle:checked ~ .nav-menu ul {
+		top: 50px;
+		opacity: 1;
+	}
 	nav {
 		background-color: #121212;
-		width: 80%;
+		width: 100%;
+		height: 50px;
+	}
+	nav .nav-wrap {
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	nav .nav-wrap .nav-brand {
+		margin: 0;
+		padding: 0 10px;
+	}
+	nav .nav-wrap .nav-menu label {
+		margin: 0;
+		padding: 7px 10px;
 	}
 	nav .nav-wrap .nav-menu ul {
-		width: 80vw;
+		width: 100vw;
+	}
+	.content {
+		overflow-y: hidden;
 	}
 	.center-small {
 		width: 100%;
@@ -350,6 +378,14 @@ footer p {
 		color: #eee;
 	}
 	.center-small h4 {
+		letter-spacing: 1px;
+		font-size: 19px;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+	.center-small h5 {
+		letter-spacing: 1px;
+		font-size: 14px;
 		word-wrap: break-word;
 		word-break: break-all;
 	}
