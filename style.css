@@ -302,8 +302,10 @@ footer p {
 		opacity: 1;
 	}
 	nav .nav-wrap .nav-menu {
-		justify-content: right;
-		align-items: flex-end;
+		display: flex;
+		justify-content: end;
+		margin: 0;
+		padding: 0;
 		background-color: brown;
 	}
 	.center-small {
