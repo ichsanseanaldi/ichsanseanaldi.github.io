@@ -74,11 +74,11 @@ nav ul li a {
 	color: #eee;
 }
 nav ul li:hover {
-	transform: scale(1.3);
-	-webkit-transform: scale(1.3);
-	-moz-transform: scale(1.3);
-	-ms-transform: scale(1.3);
-	-o-transform: scale(1.3);
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 .content {
 	height: 100vh;
@@ -225,13 +225,16 @@ footer p {
 }
 @media screen and (max-width: 1000px) {
 	nav {
-		overflow-y: visible;
+		width: 100%;
 		border-radius: 0;
 		background: rgba(0, 0, 0, 1);
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		-ms-border-radius: 0;
 		-o-border-radius: 0;
+	}
+	.content {
+		overflow-y: hidden;
 	}
 	.content-wrap p {
 		width: 100%;
@@ -271,10 +274,12 @@ footer p {
 		flex-wrap: wrap;
 		position: absolute;
 		top: -100px;
-		left: 0;
+		right: 0;
 		z-index: -1;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
 		height: 200px;
-		width: 90vw;
+		width: 20vw;
 		margin: 0 auto;
 		background: rgba(0, 0, 0, 0.9);
 		justify-content: start;
@@ -305,10 +310,10 @@ footer p {
 	}
 	nav .nav-wrap .nav-menu {
 		justify-content: flex-end;
-		background-color: rgb(42, 165, 73);
 	}
 	.center-small {
 		width: 100%;
+		padding-top: 50px;
 	}
 	.center-small h1 {
 		width: 100%;
@@ -359,10 +364,16 @@ footer p {
 		padding: 7px 10px;
 	}
 	nav .nav-wrap .nav-menu ul {
-		width: 100vw;
+		width: 100px;
 	}
 	.content {
-		overflow-y: hidden;
+		overflow-y: auto;
+	}
+	.content-wrap {
+		font-size: 14px;
+	}
+	.content-wrap h1 {
+		padding-top: 50px;
 	}
 	.center-small {
 		width: 100%;
@@ -378,7 +389,8 @@ footer p {
 	}
 	.center-small h4 {
 		letter-spacing: 1px;
-		font-size: 19px;
+		font-size: 16px;
+		font-weight: 500;
 		word-wrap: break-word;
 		word-break: break-all;
 	}
@@ -394,7 +406,7 @@ footer p {
 		font-size: 70%;
 		word-wrap: break-word;
 		word-break: break-all;
-		text-align: justify;
+		text-align: center;
 		padding: 5px;
 		margin: 0;
 		hyphens: auto;
