@@ -100,14 +100,12 @@ nav ul li:hover {
 	font-weight: 300;
 	letter-spacing: 1px;
 	line-height: 2rem;
+	height: 100%;
 }
 .center-small {
-	margin: 0 auto;
 	color: #eee;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	position: relative;
 }
 .center-small h1 {
 	font-weight: 100;
@@ -158,7 +156,7 @@ nav ul li:hover {
 	border-top: 1px solid #eee;
 	width: 50%;
 	font-size: 0.9rem;
-	text-align: start;
+	text-align: center;
 	line-height: 2rem;
 }
 .img-parallax {
@@ -181,19 +179,20 @@ nav ul li:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	flex-wrap: wrap;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 footer {
 	width: 100%;
-	background-color: rgb(31, 31, 31);
+	padding: 15px;
+	background-color: #121212;
+	color: #eee;
 	text-align: center;
-	height: 50px;
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -202,12 +201,9 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-}
-footer p {
 	letter-spacing: 2px;
 	font-weight: 100;
-	color: #eee;
-	margin: 10px;
+	font-size: 0.7em;
 }
 .img-profile {
 	width: 100px;
@@ -310,7 +306,6 @@ footer p {
 		justify-content: flex-end;
 	}
 	.center-small {
-		padding-top: 50px;
 		width: 100%;
 	}
 	.center-small h1 {
@@ -420,14 +415,5 @@ footer p {
 		-webkit-hyphens: auto;
 		-moz-hyphens: auto;
 		-ms-hyphens: auto;
-	}
-}
-@media screen and (max-height: 500px) {
-	.img-parallax-2 {
-		height: 500px;
-		position: relative;
-	}
-	.center-small {
-		height: 100%;
 	}
 }
