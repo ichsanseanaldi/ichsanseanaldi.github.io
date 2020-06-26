@@ -165,13 +165,13 @@ nav ul li:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	flex-wrap: wrap;
+	padding-top: 100px;
 }
 .img-parallax-2 {
 	background-image: url('/img/Mountain\(blur\).jpg');
