@@ -11,6 +11,7 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
+	font-size: 20px;
 }
 nav {
 	width: 90%;
@@ -83,7 +84,6 @@ nav ul li:hover {
 .content {
 	height: 100vh;
 	width: 100vw;
-	text-align: center;
 	scroll-behavior: smooth;
 	overflow-y: scroll;
 }
@@ -95,17 +95,20 @@ nav ul li:hover {
 	padding-top: 50px;
 	font-weight: 100;
 	letter-spacing: 1px;
+	text-align: center;
 }
 .content-wrap p {
 	font-weight: 300;
 	letter-spacing: 1px;
 	line-height: 2rem;
 	height: 100%;
+	text-align: center;
 }
 .center-small {
 	color: #eee;
 	display: flex;
 	flex-direction: column;
+	padding: 50px 0;
 }
 .center-small h1 {
 	font-weight: 100;
@@ -114,6 +117,7 @@ nav ul li:hover {
 	letter-spacing: 1rem;
 	font-size: 3rem;
 	margin: 0 auto;
+	text-align: center;
 	text-transform: uppercase;
 	background: rgba(0, 0, 0, 0.5);
 }
@@ -125,7 +129,7 @@ nav ul li:hover {
 	color: black;
 	letter-spacing: 1rem;
 	font-size: 1.5rem;
-	text-align: start;
+	text-align: center;
 	text-transform: uppercase;
 }
 .center-small h4 {
@@ -150,14 +154,12 @@ nav ul li:hover {
 }
 .center-small p {
 	font-weight: 300;
-	margin: 1rem auto;
+	margin: 1rem;
 	padding: 1rem;
 	letter-spacing: 1px;
-	border-top: 1px solid #eee;
-	width: 50%;
 	font-size: 0.9rem;
-	text-align: center;
 	line-height: 2rem;
+	text-align: center;
 }
 .img-parallax {
 	background-image: url('/img/Abandoned\ \(blur\).jpg');
@@ -166,11 +168,7 @@ nav ul li:hover {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: relative;
-	flex-wrap: wrap;
 	padding-top: 100px;
 }
 .img-parallax-2 {
@@ -180,9 +178,6 @@ nav ul li:hover {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: relative;
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -233,14 +228,9 @@ footer {
 	}
 	.content-wrap p {
 		width: 100%;
-		text-align: start;
-		word-wrap: break-word;
-		word-break: break-all;
+		text-align: center;
+		word-break: keep-all;
 		font-size: 100%;
-		hyphens: auto;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
 	}
 
 	#toggle:checked ~ .nav-menu ul {
@@ -334,8 +324,7 @@ footer {
 		border: none;
 		width: 100%;
 		font-size: 100%;
-		word-wrap: break-word;
-		word-break: break-all;
+		word-break: keep-all;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -375,11 +364,12 @@ footer {
 	}
 	.content-wrap p {
 		padding-bottom: 50px;
+		word-break: keep-all;
+		font-size: 0.9rem;
 	}
 	.center-small {
 		padding-top: 50px;
 		width: 100%;
-		text-align: center;
 	}
 	.center-small h1 {
 		letter-spacing: 5px;
@@ -404,16 +394,10 @@ footer {
 	}
 	.center-small p {
 		border: none;
-		width: 100%;
-		font-size: 70%;
-		word-wrap: break-word;
-		word-break: break-all;
+		font-size: 0.9rem;
+		text-rendering: optimizeLegibility;
+		margin: 30px auto 0;
+		word-break: keep-all;
 		text-align: center;
-		padding: 5px 5px 20px;
-		margin: 0;
-		hyphens: auto;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
 	}
 }
