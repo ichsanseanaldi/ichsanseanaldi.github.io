@@ -185,6 +185,7 @@ nav {
 .skillbar .skill-group .bar .fill {
 	position: relative;
 	height: 10px;
+	width: auto;
 	background-color: var(--color-lightyellow);
 	box-shadow: 0 0 10px var(--color-lightyellow);
 	border-radius: 10px 0 0 10px;
@@ -257,6 +258,9 @@ footer {
 		flex-direction: column;
 		width: 80%;
 		margin-top: 1rem;
+	}
+	.content > * {
+		text-align: center;
 	}
 	.detail {
 		order: 2;
