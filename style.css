@@ -122,6 +122,8 @@ nav {
 	text-decoration: none;
 	color: inherit;
 	font-weight: 800;
+	border-bottom: 2px solid;
+	border-color: inherit;
 }
 .detail .below {
 	font-style: italic;
