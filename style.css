@@ -134,7 +134,7 @@ nav {
 .picture .image {
 	height: 200px;
 	width: 200px;
-	background-image: url('/aset/profile\ copy.jpg');
+	background-image: url('/aset/profile.jpg');
 	background-size: cover;
 	background-position: center;
 	border: 10px solid var(--color-grey);
