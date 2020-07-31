@@ -251,6 +251,9 @@ footer {
 .contact-group a:hover {
 	color: var(--color-lightyellow);
 }
+footer p {
+	margin: 1em auto;
+}
 
 @media screen and (max-width: 876px) {
 	nav {
