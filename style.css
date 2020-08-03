@@ -38,11 +38,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.blurdark {
-	background: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-}
 .f-dir-column {
 	flex-direction: column;
 }
@@ -147,7 +142,6 @@ nav {
 	-o-border-radius: 50%;
 	box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
 }
-
 /* skillbar */
 .skillbar {
 	display: flexbox;
