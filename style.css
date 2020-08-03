@@ -134,7 +134,7 @@ nav {
 	background-image: url('/aset/profile.jpg');
 	background-size: cover;
 	background-position: center;
-	border: 10px solid var(--color-grey);
+	/* border: 10px solid var(--color-dark); */
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -154,7 +154,7 @@ nav {
 
 .skillbar .skill-group {
 	margin: 1em auto 0;
-	background-color: var(--color-grey);
+	background: transparent;
 	width: 100%;
 }
 .skillbar .skill-group p {
@@ -182,8 +182,8 @@ nav {
 	position: relative;
 	height: 10px;
 	width: auto;
-	background-color: var(--color-lightyellow);
-	box-shadow: 0 0 10px var(--color-lightyellow);
+	background-color: var(--color-grey);
+	box-shadow: 0 0 10px var(--color-grey);
 	border-radius: 10px 0 0 10px;
 	-webkit-border-radius: 10px 0 0 10px;
 	-moz-border-radius: 10px 0 0 10px;
@@ -196,7 +196,7 @@ nav {
 	top: -15px;
 	right: -5px;
 	border: 5px solid transparent;
-	border-top: 10px solid var(--color-orange);
+	border-top: 10px solid var(--color-dark);
 }
 .skillbar .skill-group .bar .fill::before {
 	content: attr(data-width) '%';
@@ -212,7 +212,7 @@ nav {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-	background: rgba(0, 0, 0, 0.5);
+	background: var(--color-dark);
 }
 /* skillbar-end */
 
