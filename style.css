@@ -367,6 +367,14 @@ footer p {
 		order: 2;
 	}
 
+	.detail .below {
+		font-size: 1.15em;
+	}
+
+	.detail .dummy {
+		font-size: 0.8em;
+	}
+
 	.picture {
 		order: 1;
 	}
