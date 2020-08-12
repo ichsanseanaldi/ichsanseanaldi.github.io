@@ -175,8 +175,8 @@ nav {
 	text-decoration: none;
 	color: inherit;
 	font-weight: 800;
+	letter-spacing: 1px;
 	border-bottom: 2px solid;
-	border-color: inherit;
 }
 
 .detail .below {
