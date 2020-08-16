@@ -1,8 +1,8 @@
 :root {
-	--color-grey: #dbdbdb;
-	--color-lightyellow: #f0a500;
-	--color-orange: #cf7500;
-	--color-dark: #000000;
+	--color-grey: #eeeeee;
+	--color-lightyellow: #00adb5;
+	--color-orange: #eeeeee;
+	--color-dark: #222831;
 }
 
 * {
@@ -79,6 +79,7 @@ body {
 	width: 40%;
 }
 
+
 #link-below {
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -123,7 +124,7 @@ nav {
 
 .list {
 	width: 100%;
-	padding: 10px 0;
+	padding: 5px 0;
 }
 
 .list>.link {
@@ -195,7 +196,7 @@ nav {
 	background-image: url('/aset/profile.jpg');
 	background-size: cover;
 	background-position: center;
-	border: 10px solid var(--color-grey);
+	border: 5px solid var(--color-grey);
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
