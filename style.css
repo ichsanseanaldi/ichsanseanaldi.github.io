@@ -45,6 +45,7 @@ body {
 
 .grey {
 	background-color: var(--color-grey);
+	color: var(--color-dark);
 }
 
 .flex-center {
@@ -266,7 +267,7 @@ nav {
 .skillbar .skill-group .bar .fill::before {
 	content: attr(data-width) '%';
 	position: absolute;
-	top: -45px;
+	top: -40px;
 	right: -20px;
 	font-size: 0.9em;
 	padding: 5px;
