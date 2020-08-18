@@ -22,6 +22,8 @@ body {
 	font-family: 'Raleway', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	animation: animenter 2s linear;
+	-webkit-animation: animenter 2s linear;
 }
 
 .anim {
@@ -143,13 +145,10 @@ nav {
 .main-wrap {
 	min-height: 100vh;
 	position: relative;
-	animation: animenter 1s linear;
-	-webkit-animation: animenter 1s linear;
 }
 
 .content {
 	width: 70%;
-	min-height: 100%;
 }
 
 .detail {
