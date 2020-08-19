@@ -261,7 +261,7 @@ nav {
 	content: attr(data-width) '%';
 	position: absolute;
 	top: -40px;
-	right: -17px;
+	right: -19px;
 	font-size: 0.9em;
 	padding: 5px;
 	color: var(--color-dark);
