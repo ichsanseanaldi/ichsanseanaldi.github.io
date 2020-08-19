@@ -15,14 +15,14 @@ for (let i = 0; i < fill.length; i++) {
 const btn = document.querySelector('.scroll');
 const links = document.querySelectorAll('.list a.link');
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', function () {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 })
 
 
-window.onscroll = () => {
-	if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+window.onscroll = function () {
+	if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
 		btn.style.opacity = '0.8';
 		btn.style.visibility = 'visible';
 	} else {
