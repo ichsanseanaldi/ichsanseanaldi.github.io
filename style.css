@@ -15,11 +15,9 @@
 html,
 body {
 	position: relative;
-	/*overflow-y: hidden;
-	*/
-	font-size: 15px;
+	font-size: 14px;
 	scroll-behavior: smooth;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Indie Flower', cursive;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	animation: animenter 2s linear;
@@ -75,14 +73,13 @@ body {
 	-o-border-radius: 50px;
 }
 
-.bolder {
-	font-weight: bold;
-}
-
 .w-30 {
 	width: 40%;
 }
 
+.lspace-1 {
+	letter-spacing: 1px;
+}
 
 #link-below {
 	transition: 0.5s;
@@ -98,12 +95,12 @@ body {
 }
 
 .link {
-	font-weight: 500;
+	font-weight: bolder;
 	display: block;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 1px;
-	padding: 10px;
+	padding: 5px 10px 0;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -133,7 +130,7 @@ nav {
 
 .list>.link {
 	color: var(--color-grey);
-	font-size: 1.25em;
+	font-size: 1.2em;
 }
 
 .list .link:hover {
@@ -164,9 +161,10 @@ nav {
 
 .detail p {
 	margin: 1rem auto;
-	font-size: 1em;
+	font-size: 1.3em;
 	line-height: 30px;
 	letter-spacing: 1px;
+	font-weight: bolder;
 }
 
 .detail p a {
@@ -220,7 +218,7 @@ nav {
 
 .skillbar .skill-group p {
 	text-align: center;
-	font-weight: 500;
+	font-weight: bolder;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-size: 1.3em;
@@ -267,8 +265,9 @@ nav {
 	content: attr(data-width) '%';
 	position: absolute;
 	top: -40px;
-	right: -20px;
+	right: -17px;
 	font-size: 0.9em;
+	font-weight: bolder;
 	padding: 5px;
 	color: var(--color-dark);
 	border: 1px solid var(--color-dark);
@@ -374,7 +373,7 @@ footer p {
 	}
 
 	.detail .dummy {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 
 	.picture {
@@ -386,14 +385,16 @@ footer p {
 	}
 }
 
+@media screen and (max-width:510px) {
+	.content h1 {
+		font-size: 2em;
+	}
+}
+
 @media screen and (max-width: 356px) {
 	.content {
 		width: 100%;
 		padding: 0 10px;
-	}
-
-	.content h1 {
-		font-size: 2.5em;
 	}
 
 	.footer-wrap {
@@ -415,6 +416,14 @@ footer p {
 		width: 100px;
 	}
 }
+
+@media screen and (max-width: 154px) {
+	* {
+		display: none;
+	}
+}
+
+
 
 
 @keyframes animenter {

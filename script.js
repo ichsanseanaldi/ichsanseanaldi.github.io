@@ -18,5 +18,11 @@ const fill = document.querySelectorAll('.fill');
 for (let i = 0; i < fill.length; i++) {
 	let val = fill[i].dataset.width;
 	fill[i].style.width = `${val}%`;
-	fill[i].animate([{ width: '0%' }, { width: `${val}%` }], { duration: 1000 });
+	fill[i].animate([{
+		width: '0%'
+	}, {
+		width: `${val}%`
+	}], {
+		duration: 4000
+	});
 }
