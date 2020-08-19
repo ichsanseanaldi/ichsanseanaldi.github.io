@@ -20,8 +20,7 @@ body {
 	font-family: 'Fredoka One', cursive;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	animation: animenter 2s linear;
-	-webkit-animation: animenter 2s linear;
+
 }
 
 
@@ -33,6 +32,8 @@ body {
 	padding: 10px;
 	border: 2px solid var(--color-dark);
 	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -131,6 +132,7 @@ body {
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
 	cursor: pointer;
+	user-select: none;
 }
 
 /* nav-start */
@@ -146,6 +148,8 @@ nav {
 	-ms-border-radius: 50px;
 	-o-border-radius: 50px;
 	border: 2px solid var(--color-white);
+	animation: animenter 0.5s;
+	-webkit-animation: animenter 0.5s;
 }
 
 .list {
@@ -170,10 +174,13 @@ nav {
 .main-wrap {
 	min-height: 100vh;
 	position: relative;
+
 }
 
 .content {
 	width: 70%;
+	animation: animenter 0.5s;
+	-webkit-animation: animenter 0.5s;
 }
 
 .detail {
@@ -286,15 +293,17 @@ nav {
 	border-top: 10px solid var(--color-grey);
 }
 
-.skillbar .skill-group .bar .fill::before {
-	content: attr(data-width) '%';
+.skillbar .skill-group .bar .number {
+	/* content: attr(data-width) '%'; */
+	text-align: center;
 	position: absolute;
 	top: -40px;
-	right: -19px;
+	right: -20px;
 	font-size: 0.9em;
 	padding: 5px;
+	height: 25px;
+	width: 40px;
 	color: var(--color-dark);
-	border: 1px solid var(--color-dark);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -447,9 +456,6 @@ footer p {
 		display: none;
 	}
 }
-
-
-
 
 @keyframes animenter {
 	from {
