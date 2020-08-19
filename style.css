@@ -367,6 +367,10 @@ footer p {
 }
 
 @media screen and (max-width: 876px) {
+	.scroll {
+		display: none;
+	}
+
 	#link-below {
 		width: 100%;
 		margin-bottom: 50px;
