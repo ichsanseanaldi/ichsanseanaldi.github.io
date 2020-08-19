@@ -24,6 +24,27 @@ body {
 	-webkit-animation: animenter 2s linear;
 }
 
+
+.scroll {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 900;
+	padding: 10px;
+	border: 2px solid var(--color-dark);
+	cursor: pointer;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
 .anim {
 	animation: animove 0.4s infinite alternate;
 	-webkit-animation: animove 0.4s infinite alternate;
@@ -81,6 +102,10 @@ body {
 	letter-spacing: 1px;
 }
 
+.fulled {
+	min-height: 100vh;
+}
+
 #link-below {
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -127,12 +152,16 @@ nav {
 	width: 100%;
 }
 
-.list>.link {
+.list .link {
 	color: var(--color-grey);
 	font-size: 1.2em;
 }
 
 .list .link:hover {
+	color: var(--color-yellow);
+}
+
+.list .link.active {
 	color: var(--color-yellow);
 }
 
@@ -160,7 +189,7 @@ nav {
 
 .detail p {
 	margin: 1rem auto;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 30px;
 }
 
@@ -279,16 +308,19 @@ nav {
 /* footer */
 footer {
 	background-color: #202020;
-	padding: 10px 0;
 	color: #eee;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 0;
 }
 
 .footer-wrap {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
-	width: 100%;
+	height: 40px;
 }
 
 .contact-group {
