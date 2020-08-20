@@ -1,10 +1,10 @@
-const fill = document.querySelectorAll('.fill');
-const btn = document.querySelector('.scroll');
-const links = document.querySelectorAll('.list a.link');
-const sections = document.querySelectorAll('section');
-const numbers = document.querySelectorAll('.number');
+const z = document.querySelectorAll('.fill');
+const l = document.querySelectorAll('.list a.link');
+const s = document.querySelectorAll('section');
+const n = document.querySelectorAll('.number');
+const g = document.querySelector('.scroll');
 
-numbers.forEach(el => {
+n.forEach(el => {
 	let f = el.dataset.number;
 	let b = 0;
 	let ct = setInterval(() => {
@@ -17,7 +17,7 @@ numbers.forEach(el => {
 	}, 16, 'linear');
 })
 
-fill.forEach(e => {
+z.forEach(e => {
 	let v = e.dataset.width;
 	let a = 0;
 	let c = setInterval(() => {
@@ -30,24 +30,24 @@ fill.forEach(e => {
 	}, 16, 'linear');
 })
 
-btn.addEventListener('click', () => {
+g.addEventListener('click', () => {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 })
 
 window.addEventListener('scroll', () => {
 	if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-		btn.style.opacity = '0.8';
-		btn.style.visibility = 'visible';
+		g.style.opacity = '0.8';
+		g.style.visibility = 'visible';
 	} else {
-		btn.style.opacity = '0';
-		btn.style.visibility = 'hidden';
+		g.style.opacity = '0';
+		g.style.visibility = 'hidden';
 	}
 })
 
 window.addEventListener('scroll', () => {
-	let index = sections.length;
-	while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-	links.forEach((link) => link.classList.remove('active'));
-	links[index].classList.add('active');
+	let index = s.length;
+	while (--index && window.scrollY + 50 < s[index].offsetTop) {}
+	l.forEach((link) => link.classList.remove('active'));
+	l[index].classList.add('active');
 })
