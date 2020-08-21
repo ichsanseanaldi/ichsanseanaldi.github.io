@@ -37,11 +37,9 @@ g.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
 	if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-		g.style.opacity = '0.8';
-		g.style.visibility = 'visible';
+		g.classList.add('show');
 	} else {
-		g.style.opacity = '0';
-		g.style.visibility = 'hidden';
+		g.classList.remove('show');
 	}
 })
 
