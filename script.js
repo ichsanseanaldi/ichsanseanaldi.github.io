@@ -31,6 +31,7 @@ z.forEach(e => {
 })
 
 g.addEventListener('click', () => {
+	g.preventDefault();
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 })

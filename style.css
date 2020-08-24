@@ -120,8 +120,8 @@ body {
 }
 
 #link-below:hover {
-	color: var(--color-grey);
-	background-color: var(--color-dark);
+	background-color: var(--color-yellow);
+	border: 1px solid transparent;
 }
 
 .link {
@@ -228,13 +228,13 @@ nav {
 	background-image: url('/aset/profile.jpg');
 	background-size: cover;
 	background-position: center;
-	border: 5px solid var(--color-grey);
+	border: 5px solid var(--color-white);
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
-	box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
+	box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 1);
 	position: relative;
 }
 
@@ -383,8 +383,8 @@ footer p {
 	#link-below {
 		width: 100%;
 		margin-bottom: 50px;
-		color: var(--color-grey);
-		background: var(--color-dark);
+		background: var(--color-yellow);
+		border: 1px solid transparent;
 	}
 
 	#last {
