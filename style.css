@@ -342,6 +342,7 @@ nav {
 	flex-direction: column;
 	text-align: center;
 	padding: 5px;
+	margin: 10px;
 	height: 350px;
 	border: 2px solid var(--color-dark);
 	border-radius: 10px;
