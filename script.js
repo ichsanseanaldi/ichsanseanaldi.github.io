@@ -2,7 +2,7 @@ const z = document.querySelectorAll('.fill');
 const l = document.querySelectorAll('.list a.link');
 const s = document.querySelectorAll('section');
 const n = document.querySelectorAll('.number');
-const g = document.querySelector('.scroll');
+// const g = document.querySelector('.scroll');
 
 n.forEach(el => {
 	let f = el.dataset.number;
@@ -30,10 +30,10 @@ z.forEach(e => {
 	}, 16, 'linear');
 })
 
-g.addEventListener('click', () => {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-})
+// g.addEventListener('click', () => {
+// 	document.body.scrollTop = 0;
+// 	document.documentElement.scrollTop = 0;
+// })
 
 window.addEventListener('scroll', () => {
 	if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
@@ -45,7 +45,10 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
 	let index = s.length;
-	while (--index && window.scrollY + 50 < s[index].offsetTop) {}
+	while (--index && window.scrollY < s[index].offsetTop) {}
 	l.forEach((link) => link.classList.remove('active'));
 	l[index].classList.add('active');
+	history.replaceState(null, null, l[index].getAttribute('href'));
+
+
 })
