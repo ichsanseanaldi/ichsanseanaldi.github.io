@@ -356,7 +356,7 @@ nav {
 	margin: 10px;
 	height: 370px;
 	width: 270px;
-	border: 2px solid var(--color-dark);
+	border: 5px solid var(--color-yellow);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
