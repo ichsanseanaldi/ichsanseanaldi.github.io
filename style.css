@@ -1,9 +1,7 @@
 :root {
 	--color-grey: #a8a8a8;
 	--color-white: #ffffff;
-	/* --color-yellow: #fddb3a; */
-	/* --color-yellow: #ffd60a; */
-	--color-yellow: #7119ff;
+	--color-purple: #7119ff;
 	--color-dark: #222831;
 }
 
@@ -59,8 +57,8 @@ body {
 	margin: 0 10px;
 }
 
-.yellow {
-	background-color: var(--color-yellow);
+.purple {
+	background-color: var(--color-purple);
 }
 
 .white {
@@ -125,7 +123,7 @@ body {
 
 #link-below:hover {
 	color: var(--color-white);
-	background-color: var(--color-yellow);
+	background-color: var(--color-purple);
 	border: 1px solid transparent;
 
 }
@@ -172,11 +170,11 @@ nav {
 }
 
 .list .link:hover {
-	color: var(--color-yellow);
+	color: var(--color-purple);
 }
 
 .list .link.active {
-	color: var(--color-yellow);
+	color: var(--color-purple);
 }
 
 /* nav-end */
@@ -285,8 +283,8 @@ nav {
 	position: absolute;
 	top: 5px;
 	bottom: 5px;
-	background-color: var(--color-yellow);
-	box-shadow: 0 0 10px var(--color-yellow);
+	background-color: var(--color-purple);
+	box-shadow: 0 0 10px var(--color-purple);
 	border-radius: 10px 0 0 10px;
 	-webkit-border-radius: 10px 0 0 10px;
 	-moz-border-radius: 10px 0 0 10px;
@@ -314,7 +312,7 @@ nav {
 	padding: 5px;
 	height: 25px;
 	width: 40px;
-	color: var(--color-yellow);
+	color: var(--color-purple);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -356,7 +354,7 @@ nav {
 	margin: 10px;
 	height: 370px;
 	width: 270px;
-	border: 5px solid var(--color-yellow);
+	border: 5px solid var(--color-purple);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -439,7 +437,7 @@ footer {
 }
 
 .contact-group a:hover {
-	color: var(--color-yellow);
+	color: var(--color-purple);
 }
 
 footer p {
@@ -471,7 +469,7 @@ footer p {
 		width: 100%;
 		margin: 30px 0 50px;
 		color: var(--color-white);
-		background: var(--color-yellow);
+		background: var(--color-purple);
 		border: 1px solid transparent;
 	}
 
