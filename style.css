@@ -146,9 +146,9 @@ body {
 /* nav-start */
 nav {
 	position: fixed;
-	right: 40%;
+	right: 45%;
 	top: 5px;
-	left: 40%;
+	left: 45%;
 	z-index: 99;
 	border-radius: 50px;
 	-webkit-border-radius: 50px;
