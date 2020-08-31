@@ -14,7 +14,7 @@ n.forEach(el => {
 		} else {
 			clearInterval(ct);
 		}
-	}, 16, 'linear');
+	}, 16);
 })
 
 z.forEach(e => {
@@ -27,15 +27,11 @@ z.forEach(e => {
 		} else {
 			clearInterval(c);
 		}
-	}, 16, 'linear');
+	}, 16);
 })
 
 window.addEventListener('scroll', () => {
-	if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-		g.classList.add('show');
-	} else {
-		g.classList.remove('show');
-	}
+	(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) ? g.classList.add('show'): g.classList.remove('show');
 })
 
 window.addEventListener('scroll', () => {

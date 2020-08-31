@@ -20,6 +20,7 @@ body {
 	font-family: 'Fredoka One', cursive;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 
 }
 
@@ -110,6 +111,27 @@ body {
 
 .fulled {
 	min-height: 100vh;
+}
+
+.skewed {
+	width: 100vw;
+	height: 100px;
+	transform-origin: top left;
+	transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+}
+
+
+.two {
+	transform-origin: top left;
+	transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
 }
 
 #link-below {
