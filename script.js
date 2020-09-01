@@ -14,7 +14,7 @@ n.forEach(el => {
 		} else {
 			clearInterval(ct);
 		}
-	}, 16);
+	}, 1000 / 60);
 })
 
 z.forEach(e => {
@@ -27,7 +27,7 @@ z.forEach(e => {
 		} else {
 			clearInterval(c);
 		}
-	}, 16);
+	}, 1000 / 60);
 })
 
 window.addEventListener('scroll', () => {
