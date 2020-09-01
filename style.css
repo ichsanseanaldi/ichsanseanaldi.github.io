@@ -208,8 +208,8 @@ nav {
 
 .content {
 	width: 70%;
-	animation: animenter 0.5s;
-	-webkit-animation: animenter 0.5s;
+	/* animation: animenter 0.5s;
+	-webkit-animation: animenter 0.5s; */
 }
 
 .detail {
@@ -562,7 +562,7 @@ footer p {
 	}
 }
 
-@keyframes animenter {
+/* @keyframes animenter {
 	from {
 		opacity: 0;
 	}
@@ -570,7 +570,7 @@ footer p {
 	to {
 		opacity: 1;
 	}
-}
+} */
 
 @keyframes animove {
 	from {

@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="fontawesome-new/css/fontawesome.min.css">
 	<link rel="stylesheet" href="fontawesome-new/css/all.css">
+	<link rel="stylesheet" href="/aos-2/dist/aos.css">
 	<link rel="stylesheet" href="style.css" />
 	<noscript>
 		<style>
@@ -35,7 +36,7 @@
 	</nav>
 	<section id="main">
 		<div class="main-wrap flex-center white">
-			<div class="content flex-center">
+			<div data-aos="zoom-in" class=" content flex-center">
 				<div class="detail">
 					<h1>Hello there, i'm Ichsan!</h1>
 					<p class="below">
@@ -53,37 +54,37 @@
 	<section id="skill">
 		<div class="main-wrap flex-center grey">
 			<div class="content flex-center f-dir-column">
-				<div class="detail">
+				<div data-aos="zoom-in-up" class="detail">
 					<h1>My Area of Expertise</h1>
 					<p class="text-center dummy mp-z">- these numbers will change in time -</p>
 				</div>
 				<div class="skillbar">
 					<div class="skill-group">
-						<p><i class="fab fa-html5"></i> HTML5 & <i class="fab fa-css3"></i> CSS3</p>
-						<div class="bar">
+						<p data-aos="zoom-out"><i class="fab fa-html5"></i> HTML5 & <i class="fab fa-css3"></i> CSS3</p>
+						<div data-aos="zoom-in" class="bar">
 							<div class="fill" data-width="70" style="width: 70%;">
 								<div class="number" data-number="70"></div>
 							</div>
 						</div>
 					</div>
 					<div class="skill-group">
-						<p> <i class="fab fa-js"></i> Javascript / ES6 </p>
-						<div class="bar">
+						<p data-aos="zoom-out"> <i class="fab fa-js"></i> Javascript / ES6 </p>
+						<div data-aos="zoom-in" class="bar">
 							<div class="fill" data-width="15" style="width: 15%;">
 								<div class="number" data-number="15"></div>
 							</div>
 						</div>
 					</div>
 					<div class="skill-group">
-						<p> <i class="fa fa-cog"></i> tools & <i class="fa fa-code"></i> backend</p>
-						<div class="bar">
+						<p data-aos="zoom-out"> <i class="fa fa-cog"></i> tools & <i class="fa fa-code"></i> backend</p>
+						<div data-aos="zoom-in" class="bar">
 							<div class="fill" data-width="20" style="width: 20%;">
 								<div class="number" data-number="20"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="detail" id="last" style="order: 4;">
+				<div data-aos="zoom-in-down" class="detail" id="last" style="order: 4;">
 					<p class="text-center dummy" style="margin: 0;padding: 0;">Check my experiment in <a href="https://codepen.io/ichsanseanaldi" target="_blank"><i class="fab fa-codepen"></i> Codepen.io</a></p>
 				</div>
 			</div>
@@ -93,11 +94,11 @@
 	<section id="services">
 		<div class="main-wrap flex-center white">
 			<div class="content flex-center f-dir-column">
-				<div class="detail">
+				<div data-aos="zoom-out-down" class="detail">
 					<h1 class="text-center">My Services</h1>
 				</div>
 				<div class="services-list">
-					<div class="card">
+					<div data-aos="zoom-out-up" class="card">
 						<div class="picture-icon"><i class="fa fa-file-image"></i><i class=" fa fa-exchange-alt"></i><i class="fa fa-file-code"></i>
 						</div>
 						<div class="detail-card">
@@ -105,14 +106,14 @@
 							<p>Collaborate with you & understanding requirements for converting your web design into raw HTML & CSS !</p>
 						</div>
 					</div>
-					<div class="card">
+					<div data-aos="zoom-out-up" class="card">
 						<div class="picture-icon"><i class="fa fa-tasks"></i></div>
 						<div class="detail-card">
 							<h1>Develop & Test</h1>
 							<p>Choosing the right technologies for the best performance also test it on multiple browser and various devices</p>
 						</div>
 					</div>
-					<div class="card">
+					<div data-aos="zoom-out-up" class="card">
 						<div class="picture-icon"><i class="fa fa-eye"></i><i class="fa fa-users"></i></div>
 						<div class="detail-card">
 							<h1>UI & UX Feasibility</h1>
@@ -139,6 +140,11 @@
 		<p class="text-center lspace-1"> &copy; ichsanseanaldi.github.io 2020 </p>
 	</footer>
 	<script src="script.js"></script>
+	<script src="/aos-2/dist/aos.js"></script>
+	<script>
+		AOS.init();
+
+	</script>
 </body>
 
 </html>
