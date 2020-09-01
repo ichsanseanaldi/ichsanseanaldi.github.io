@@ -376,8 +376,8 @@ nav {
 	margin: 10px;
 	height: 370px;
 	width: 270px;
-	border: 5px solid var(--color-purple);
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	/* border: 5px solid var(--color-purple); */
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
