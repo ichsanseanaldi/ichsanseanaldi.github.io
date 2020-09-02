@@ -4,6 +4,13 @@ const s = document.querySelectorAll('section');
 const n = document.querySelectorAll('.number');
 const g = document.querySelector('.scroll');
 
+
+const bounding = s[1].getBoundingClientRect();
+
+if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+	alert('sup');
+}
+
 n.forEach(el => {
 	let f = el.dataset.number;
 	let b = 0;
@@ -40,6 +47,4 @@ window.addEventListener('scroll', () => {
 	l.forEach((link) => link.classList.remove('active'));
 	l[index].classList.add('active');
 	history.pushState(null, null, '#' + s[index].getAttribute('id'));
-
-
 })
