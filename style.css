@@ -122,7 +122,7 @@ body {
 
 .skewed {
 	width: 100vw;
-	height: 100px;
+	height: 90px;
 	transform-origin: top left;
 	transform: rotate(-2deg);
 	-webkit-transform: rotate(-2deg);
