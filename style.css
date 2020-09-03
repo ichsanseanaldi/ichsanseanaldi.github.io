@@ -470,6 +470,10 @@ footer p {
 }
 
 
+.inside {
+	margin: 70px 0 35px;
+}
+
 @media screen and (max-width: 1240px) {
 	/* #link-below {
 		width: 50%;
@@ -559,17 +563,23 @@ footer p {
 	}
 }
 
-@media screen and (max-width: 255px) {
+@media screen and (max-width: 328px) {
+	.detail h1 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 270px) {
 
 	section,
 	.main-wrap,
 	footer {
-		width: 250px;
+		width: 270px;
 	}
 
 	.content>*,
 	.inside>* {
-		width: 250px;
+		width: 270px;
 	}
 }
 
