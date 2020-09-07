@@ -2,29 +2,33 @@ const z = document.querySelectorAll('.fill');
 const l = document.querySelectorAll('.list a.link');
 const s = document.querySelectorAll('section');
 const n = document.querySelectorAll('.number');
-const g = document.querySelector('.scroll');
+// const g = document.querySelector('.scroll');
 
-g.addEventListener('click', () => {
-	if (document.scrollingElement.scrollTop === 0) return;
+// g.addEventListener('click', () => {
+// 	if (document.scrollingElement.scrollTop === 0) return;
 
-	const totalScrollDistance = document.scrollingElement.scrollTop;
+// 	const totalScrollDistance = document.scrollingElement.scrollTop;
 
-	let scrollY = totalScrollDistance;
-	let oldTimestamp = null;
+// 	let scrollY = totalScrollDistance;
+// 	let oldTimestamp = null;
 
-	function step(newTimestamp) {
-		if (oldTimestamp !== null) {
-			scrollY -= totalScrollDistance * (newTimestamp - oldTimestamp) / 700;
-			if (scrollY <= 0) {
-				return document.scrollingElement.scrollTop = 0;
-			}
-			document.scrollingElement.scrollTop = scrollY;
-		}
-		oldTimestamp = newTimestamp;
-		window.requestAnimationFrame(step);
-	}
-	window.requestAnimationFrame(step);
-});
+// 	function step(newTimestamp) {
+// 		if (oldTimestamp !== null) {
+// 			scrollY -= totalScrollDistance * (newTimestamp - oldTimestamp) / 700;
+// 			if (scrollY <= 0) {
+// 				return document.scrollingElement.scrollTop = 0;
+// 			}
+// 			document.scrollingElement.scrollTop = scrollY;
+// 		}
+// 		oldTimestamp = newTimestamp;
+// 		window.requestAnimationFrame(step);
+// 	}
+// 	window.requestAnimationFrame(step);
+// });
+
+// window.addEventListener('scroll', () => {
+// 	(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) ? g.classList.add('show'): g.classList.remove('show');
+// })
 
 setTimeout(() => {
 	n.forEach(el => {
@@ -55,9 +59,7 @@ setTimeout(() => {
 }, 1000);
 
 
-window.addEventListener('scroll', () => {
-	(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) ? g.classList.add('show'): g.classList.remove('show');
-})
+
 
 window.addEventListener('scroll', () => {
 	let index = s.length;
