@@ -2,33 +2,34 @@ const z = document.querySelectorAll('.fill');
 const l = document.querySelectorAll('.list a.link');
 const s = document.querySelectorAll('section');
 const n = document.querySelectorAll('.number');
-// const g = document.querySelector('.scroll');
+const g = document.querySelector('.scroll');
 
-// g.addEventListener('click', () => {
-// 	if (document.scrollingElement.scrollTop === 0) return;
 
-// 	const totalScrollDistance = document.scrollingElement.scrollTop;
+window.addEventListener('scroll', () => {
+	(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) ? g.classList.add('show'): g.classList.remove('show');
+})
 
-// 	let scrollY = totalScrollDistance;
-// 	let oldTimestamp = null;
+g.addEventListener('click', () => {
+	if (document.scrollingElement.scrollTop === 0) return;
 
-// 	function step(newTimestamp) {
-// 		if (oldTimestamp !== null) {
-// 			scrollY -= totalScrollDistance * (newTimestamp - oldTimestamp) / 700;
-// 			if (scrollY <= 0) {
-// 				return document.scrollingElement.scrollTop = 0;
-// 			}
-// 			document.scrollingElement.scrollTop = scrollY;
-// 		}
-// 		oldTimestamp = newTimestamp;
-// 		window.requestAnimationFrame(step);
-// 	}
-// 	window.requestAnimationFrame(step);
-// });
+	const totalScrollDistance = document.scrollingElement.scrollTop;
 
-// window.addEventListener('scroll', () => {
-// 	(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) ? g.classList.add('show'): g.classList.remove('show');
-// })
+	let scrollY = totalScrollDistance;
+	let oldTimestamp = null;
+
+	function step(newTimestamp) {
+		if (oldTimestamp !== null) {
+			scrollY -= totalScrollDistance * (newTimestamp - oldTimestamp) / 1000;
+			if (scrollY <= 0) {
+				return document.scrollingElement.scrollTop = 0;
+			}
+			document.scrollingElement.scrollTop = scrollY;
+		}
+		oldTimestamp = newTimestamp;
+		window.requestAnimationFrame(step);
+	}
+	window.requestAnimationFrame(step);
+});
 
 setTimeout(() => {
 	n.forEach(el => {
@@ -57,9 +58,6 @@ setTimeout(() => {
 		}, 1000 / 60, 'linear');
 	})
 }, 1000);
-
-
-
 
 window.addEventListener('scroll', () => {
 	let index = s.length;

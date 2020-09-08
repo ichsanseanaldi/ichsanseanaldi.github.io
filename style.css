@@ -3,6 +3,7 @@
 	--color-white: #ffffff;
 	--color-purple: #7119ff;
 	--color-dark: #222831;
+	--color-dark-grey: #777;
 }
 
 * {
@@ -29,16 +30,16 @@ body {
 	bottom: 10px;
 	right: 10px;
 	z-index: 900;
-	padding: 10px;
-	border: 2px solid var(--color-dark);
+	padding: 7px 10px;
+	border: 1px solid transparent;
 	cursor: pointer;
 	opacity: 0;
 	visibility: hidden;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -193,6 +194,11 @@ nav {
 
 .list .link:hover {
 	color: var(--color-purple);
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
 }
 
 .list .link.active {
@@ -234,10 +240,9 @@ nav {
 }
 
 .detail .below {
-	font-style: italic;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	margin: 0 auto;
-	color: var(--color-purple);
+	color: var(--color-dark-grey);
 }
 
 .picture {
@@ -245,8 +250,8 @@ nav {
 }
 
 .picture .image {
-	height: 200px;
-	width: 200px;
+	height: 170px;
+	width: 170px;
 	background-image: url('/aset/profile.jpg');
 	background-size: cover;
 	background-position: center;
