@@ -293,8 +293,9 @@ nav {
 	padding: 0 5px;
 	height: 20px;
 	width: 100%;
-	background-color: var(--color-white);
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	background-color: var(--color-grey);
+	box-shadow: inset 5px 5px 5px rgba(10, 10, 10, 0.2),
+		inset -5px -5px 5px var(--color-white);
 	border: 2px solid transparent;
 	border-radius: 10px 0 0 10px;
 	-webkit-border-radius: 10px 0 0 10px;
@@ -309,7 +310,6 @@ nav {
 	bottom: 2px;
 	left: 2px;
 	background-color: var(--color-purple);
-	box-shadow: 0 0 10px var(--color-purple);
 	border-radius: 10px 0 0 10px;
 	-webkit-border-radius: 10px 0 0 10px;
 	-moz-border-radius: 10px 0 0 10px;
@@ -371,17 +371,12 @@ nav {
 	margin: 10px;
 	height: 370px;
 	width: 270px;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-	transition: 0.2s linear;
-	-webkit-transition: 0.2s linear;
-	-moz-transition: 0.2s linear;
-	-ms-transition: 0.2s linear;
-	-o-transition: 0.2s linear;
 }
 
 .picture-icon {
