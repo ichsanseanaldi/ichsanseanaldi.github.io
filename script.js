@@ -4,31 +4,31 @@ const s = document.querySelectorAll('section');
 const n = document.querySelectorAll('.number');
 const g = document.querySelector('.scroll');
 
-n.forEach(el => {
-	let f = el.dataset.number;
-	let b = 0;
-	let ct = setInterval(() => {
-		if (b <= f) {
-			el.innerText = `${b}%`;
-			b++;
-		} else {
-			clearInterval(ct);
-		}
-	}, 1000 / 60, 'linear');
-})
+// n.forEach(el => {
+// 	let f = el.dataset.number;
+// 	let b = 0;
+// 	let ct = setInterval(() => {
+// 		if (b <= f) {
+// 			el.innerText = `${b}%`;
+// 			b++;
+// 		} else {
+// 			clearInterval(ct);
+// 		}
+// 	}, 1000 / 60, 'linear');
+// })
 
-z.forEach(e => {
-	let v = e.dataset.width;
-	let a = 0;
-	let c = setInterval(() => {
-		if (a <= v) {
-			e.style.width = `${a}%`;
-			a++;
-		} else {
-			clearInterval(c);
-		}
-	}, 1000 / 60, 'linear');
-})
+// z.forEach(e => {
+// 	let v = e.dataset.width;
+// 	let a = 0;
+// 	let c = setInterval(() => {
+// 		if (a <= v) {
+// 			e.style.width = `${a}%`;
+// 			a++;
+// 		} else {
+// 			clearInterval(c);
+// 		}
+// 	}, 1000 / 60, 'linear');
+// })
 
 
 window.addEventListener('scroll', () => {

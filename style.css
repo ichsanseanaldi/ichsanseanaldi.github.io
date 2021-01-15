@@ -15,14 +15,18 @@
 
 html,
 body {
-	font-size: 14px;
+	font-size: 15px;
 	scroll-behavior: smooth;
 	line-height: 1.5;
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Rubik', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 
+}
+
+h1 {
+	font-family: 'Ubuntu', cursive;
 }
 
 .scroll {
@@ -85,6 +89,10 @@ body {
 
 .f-dir-column {
 	flex-direction: column;
+}
+
+.crossed {
+	text-decoration: line-through;
 }
 
 .text-center {
@@ -265,7 +273,7 @@ nav {
 }
 
 /* skillbar */
-.skillbar {
+/* .skillbar {
 	display: flexbox;
 	display: flex;
 	flex-direction: column;
@@ -345,7 +353,7 @@ nav {
 	background: var(--color-white);
 	border: 1px solid transparent;
 	user-select: none;
-}
+} */
 
 /* services-list */
 
