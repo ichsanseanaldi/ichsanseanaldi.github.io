@@ -1,5 +1,5 @@
 :root {
-	--color-grey: #eaeaea;
+	--color-grey: #ededed;
 	--color-white: #ffffff;
 	--color-purple: #7119ff;
 	--color-dark: #222831;
@@ -30,6 +30,8 @@ h1 {
 }
 
 .scroll {
+	background-color: #777;
+	color: var(--color-white);
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
@@ -81,8 +83,8 @@ h1 {
 }
 
 .grey {
-	background-color: var(--color-grey);
-	color: var(--color-dark);
+	background-color: var(--color-dark);
+	color: var(--color-white);
 }
 
 .flex-center {
